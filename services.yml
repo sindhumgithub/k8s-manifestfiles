@@ -5,7 +5,9 @@ metadata:
   labels:
     app: swiggy
 spec:
-  type: NodePort
+# type: ClusterIP 
+# type: NodePort
+  type: LoadBalancer
   selector:
     app: swiggy
   ports:
